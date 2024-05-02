@@ -1,0 +1,58 @@
+  <h1 id="title"> Health Survey </h1>
+  <p id="description"> <i> As they all say, health is wealth. This is a survey to assess the health of our respondents. </i> </p>
+<form id="survey-form">
+  <div>
+  <label id="name-label" for="name"> Name: </label>
+  <input type="text" id="name" class="form-control" placeholder="Enter your name" required> <br>
+  </div>
+  <div>
+  <label id="email-label" for="email"> Email: </label>
+  <input type="email" id="email" class="form-control" placeholder="Enter your email" required> <br>
+  </div>
+  <div>
+  <label id="number-label" for="number"> Age: (optional) </label>
+  <input type="number" id="number" class="form-control" placeholder="Enter your age" min=10 max=99> <br>
+  </div>
+  <div>
+  <label for="dropdown"> What describes your current role? </label>
+  <select id="dropdown" name="dropdown" class="form-control" required>
+    <option disabled selected value>Select current role</option>
+    <option value="student">Student</option>
+    <option value="employee">Full-time employee</option>
+    <option value="part-time">Part-time employee </option>
+    <option value="self-employed">Self-employed </option>
+    <option value="business-owner">Business owner </option>
+    <option value="others">Others </option>
+  </select> <br>
+  </div>
+  <div>
+  <p> How often do you exercise? </p>
+  <input type="radio" name="exercise" value="daily"> <label> Daily </label> <br>
+  <input type="radio" name="exercise" value="several"> <label> Several times a week </label> <br>
+  <input type="radio" name="exercise" value="once-a-week"> <label> Once a week </label> <br>
+  <input type="radio" name="exercise" value="month"> <label> Once or twice a month </label> <br>
+  <input type="radio" name="exercise" value="rarely"> <label> Rarely </label> <br>
+  </div>
+  <div>
+    <p> What type of exercise do you do? </p> <span> Check all that apply. </span> <br>
+    <input type="checkbox" id="exercise-type1" name="exercise-type1" value="aerobics">
+  <label for="exercise-type1"> Cardio & Aerobics</label> <br>
+    <input type="checkbox" id="exercise-type2" name="exercise-type2" value="HIIT">
+  <label for="exercise-type2"> HIIT & Crossfit</label> <br>
+    <input type="checkbox" id="exercise-type3" name="exercise-type3" value="yoga">
+  <label for="exercise-type3"> Yoga & Pilates</label> <br>
+    <input type="checkbox" id="exercise-type4" name="exercise-type4" value="strength_training">
+  <label for="exercise-type4"> Strength Training</label> <br>
+    <input type="checkbox" id="exercise-type5" name="exercise-type5" value="sports">
+  <label for="exercise-type5"> Sports Training</label> <br>
+    <input type="checkbox" id="exercise-type6" name="exercise-type6" value="stretching">
+  <label for="exercise-type6"> Stretching & Balance</label> <br>
+  </div>
+  
+  <div>
+    <p> What can you do to start taking care of your health today? </p>
+    <textarea id="starthealth" name="starthealth" class="form-control2" placeholder="Enter your ideas here..."> </textarea>
+  </div>
+  
+    <button type="submit" id="submit">Submit</button>
+</form>
