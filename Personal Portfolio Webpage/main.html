@@ -1,0 +1,63 @@
+<style>
+body {
+  font-family: Arial;
+  font-size: 16px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
+
+#navbar li{
+  list-style: none;
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+main {
+  position: absolute;
+  margin-top: 50px;
+}
+
+@media (max-width: 600px) {
+header {
+    flex-wrap: wrap;
+  }
+}
+</style>
+
+<nav id="navbar">
+  <ul>
+    <li><a href="#welcome-section">Welcome</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#profile">Profile</a></li>
+  </ul>
+</nav>
+<main id="main-page">
+<section id="welcome-section">
+  <h1>Welcome!</h1>
+  <p>So glad to have you here.<p>
+</section>
+<section id="projects">
+  <h3>Projects</h3>
+<div class="project-tile" id="Technical_Documentation">
+  <h3>Technical Documentation project</h3>
+  <p>In this project, I created a Physical chemistry page for chemistry students. See the link of the project <a href="https://codepen.io/alissandracayabyab/pen/ExQgvbB">here.</a></p>
+</div>
+<div class="project-tile" id="Survey_Form">
+  <h3>Survey Form project</h3>
+  <p>As they say, health is wealth. Are you living a full and healthy life? Answer the form <a href="https://codepen.io/alissandracayabyab/pen/bGLexOx">here.</a></p>
+</div>
+<div class="project-tile" id="tribute">
+  <h3>Tribute page project</h3>
+  <p>Dr. Dayrit is one of the most prolific chemistry professors in the Philippines. He has been teaching and researching chemistry for more than 30 years.Learn more about his life <a href="https://codepen.io/alissandracayabyab/pen/poagbax">here.</a></p>
+</div>
+</section>
+<section id="profile">
+  <h3>Profile</h3>
+  <p>See my Freecodecamp link <a href="https://www.freecodecamp.org/fcc392538bd-4329-4814-83ab-ede34e6693e2" id="profile-link" target="_blank">here.</a></p>
+</section>
+</main>
