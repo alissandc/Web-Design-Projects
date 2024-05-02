@@ -1,0 +1,196 @@
+<style>
+  body {
+    font-family: "Verdana", Arial;
+    font-size: 16px;
+    line-height: 1.5;
+    min-width: 290px;
+  }
+
+  #navbar {
+  position: fixed;
+  min-width: 290px;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 100%;
+  border-right: solid;
+  border-color: rgba(0, 22, 22, 0.4);
+}
+
+#main-doc {
+  position: absolute;
+  margin-left: 310px;
+  padding: 20px;
+  margin-bottom: 110px;
+}
+
+#navbar li {
+  color: #4d4e53;
+  border-top: 1px solid;
+  list-style: none;
+  position: relative;
+  width: 100%;
+}
+
+  header {
+    font-size: 24px;
+  }
+
+  #navbar li {
+    list-style: none;
+  }
+
+  code {
+    display: block;
+  text-align: center;
+    border: 1px solid;
+    width: 100%;
+  }
+
+  @media only screen and (max-width: 815px) {
+  #navbar ul {
+    border: 1px solid;
+    height: 300px;
+  }
+
+  #navbar {
+    background-color: white;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 350px;
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid;
+  }
+
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 350px;
+  }
+}
+</style>
+
+<nav id="navbar">
+  <header>Physical Chemistry</header>
+    <ul>
+      <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+      <li><a class="nav-link" href="#Ideal_Gases">Ideal_Gases</a></li>
+      <li><a class="nav-link" href="#Real_Gases">Real_Gases</a></li>
+      <li><a class="nav-link" href="#First_Law_of_Thermodynamics">First_Law_of_Thermodynamics</a></li>
+      <li><a class="nav-link" href="#Second_and_Third_Law_of_Thermodynamics">Second_and_Third_Law_of_Thermodynamics</a></li>
+      <li><a class="nav-link" href="#Gibbs_Free_Energy">Gibbs_Free_Energy</a></li>
+      <li><a class="nav-link" href="#Chemical_Equilibrium">Chemical_Equilibrium</a></li>
+      <li><a class="nav-link" href="#Electrochemistry">Electrochemistry</a></li>
+      <li><a class="nav-link" href="#Phase_Equilibrium">Phase_Equilibrium</a></li>
+      <li><a class="nav-link" href="#Chemical_Kinetics">Chemical_Kinetics</a></li>
+      <li><a class="nav-link" href="#Reference">Reference</a></li>
+    </ul>
+</nav>
+
+<main id="main-doc">
+  <section class="main-section" id="Introduction">
+    <header>Introduction</header>
+      <article>
+        <p> Many students are intimidated by Physical Chemistry because oftentimes, it may seem like the subject is full of abstract equations that need lots of memory space! Physical Chemistry does have its fair share of equations to remember, so we believe that focusing on the understanding and some of the derivations of concepts and equations will give you strong foundations in solving both conceptual and numerical problems on the Board Exam, and improved recall on those equations. </p>
+        <p> While it is highly unlikely that the Board Exam will require you to show the derivation of a particular equation, your ability to do so (or at least your ability to demonstrate an understanding of the significance of each part of the equation and/or model) will nevertheless give you a better grasp of the equations and their applicability. It is usually easier to recall “why” rather than “what”. Many questions on the board exam are also conceptual, testing you for your understanding of underlying assumptions behind models and equations, as well as qualitative trends. Understanding the equations and models will also give you the skills needed to decide which equations and models are most applicable for a given problem or case. </p>
+      </article>
+  </section>
+  <section class="main-section" id="Ideal_Gases">
+    <header>Ideal_Gases</header>
+      <article>
+        <p> An ideal gas is defined as one in which all collisions between atoms or molecules are perfectly eleastic and in which there are no intermolecular attractive forces. One can visualize it as a collection of perfectly hard spheres which collide but which otherwise do not interact with each other. In such a gas, all the internal energy is in the form of kinetic energy and any change in internal energy is accompanied by a change in temperature. </p>
+        <p> An ideal gas can be characterized by three state variables: absolute pressure (P), volume (V), and absolute temperature (T). The relationship between them may be deduced from kinetic theory and is called the </p>
+        <code> PV = nRT </code>
+        <ul>
+          <li> n = number of moles </li>
+          <li> R = universal gas constant = 8.3145 J/mol K </li>
+          <li> N = number of molecules </li>
+          <li> k = Boltzmann constant = 1.38066 x 10-23 J/K = 8.617385 x 10-5 eV/K </li>
+          <li> k = R/NA</li>
+        </ul>
+      </article>
+  </section>
+  <section class="main-section" id="Real_Gases">
+    <header>Real_Gases</header>
+      <article>
+        <p> The postulates of the kinetic molecular theory of gases ignore both the volume occupied by the molecules of a gas and all interactions between molecules, whether attractive or repulsive. In reality, however, all gases have nonzero molecular volumes. Furthermore, the molecules of real gases interact with one another in ways that depend on the structure of the molecules and therefore differ for each gaseous substance. In this section, we consider the properties of real gases and how and why they differ from the predictions of the ideal gas law. We also examine liquefaction, a key property of real gases that is not predicted by the kinetic molecular theory of gases. </p>
+        <p> Because the molecules of an ideal gas are assumed to have zero volume, the volume available to them for motion is always the same as the volume of the container. In contrast, the molecules of a real gas have small but measurable volumes. At low pressures, the gaseous molecules are relatively far apart, but as the pressure of the gas increases, the intermolecular distances become smaller and smaller (Figure 10.23 "The Effect of Nonzero Volume of Gas Particles on the Behavior of Gases at Low and High Pressures"). As a result, the volume occupied by the molecules becomes significant compared with the volume of the container. Consequently, the total volume occupied by the gas is greater than the volume predicted by the ideal gas law. Thus at very high pressures, the experimentally measured value of PV/nRT is greater than the value predicted by the ideal gas law. </p>
+        <p> The van der Waals Equation
+The Dutch physicist Johannes van der Waals (1837–1923; Nobel Prize in Physics, 1910) modified the ideal gas law to describe the behavior of real gases by explicitly including the effects of molecular size and intermolecular forces. In his description of gas behavior, the so-called van der Waals equation, </p>
+      <code> (P+an^2/V^2)/(V−nb)=nRT </code>
+      <p> a and b are empirical constants that are different for each gas. The values of a and b are listed in Table 10.5 "van der Waals Constants for Some Common Gases" for several common gases. The pressure term—P + (an2/V2)—corrects for intermolecular attractive forces that tend to reduce the pressure from that predicted by the ideal gas law. Here, n2/V2 represents the concentration of the gas (n/V) squared because it takes two particles to engage in the pairwise intermolecular interactions of the type shown in Figure 10.24 "The Effect of Intermolecular Attractive Forces on the Pressure a Gas Exerts on the Container Walls". The volume term—V − nb—corrects for the volume occupied by the gaseous molecules.</p>
+      </article>
+  </section>
+  <section class="main-section" id="First_Law_of_Thermodynamics">
+    <header>First_Law_of_Thermodynamics</header>
+      <article>
+        <p> The first law of thermodynamics states that energy can be converted from one form to another, but cannot be created or destroyed. The most important and critical aspect of life revolves around the idea of energy. During the course of a single day, a person finds him or herself using energy in all sorts to live their lives. Whether driving a car or eating lunch, the consumption of some sort of energy is unavoidable. While it may seem that energy is being created for our purposes and destroyed during it, there is in fact no change in the amount of energy in the world at one time. Taking this a step farther, one may state the entirety of the energy in the universe is at a constant with energy just being converted into different forms. </p>
+        <p> To obtain a better understanding of the workings of energy within the universe, it is helpful to classify it into two distinct parts. The first being the energy of a specific system,  Esys , and the second being whatever energy was not included in the system which we label as the energy of the surroundings, Esurr. Since these two parts are equal to the total energy of the universe,  Euniv , it can be concluded that </p>
+        <code> Euniv=Esys+Esurr </code>
+      </article>
+  </section>
+  <section class="main-section" id="Second_and_Third_Law_of_Thermodynamics">
+    <header>Second_and_Third_Law_of_Thermodynamics</header>
+      <article>
+        <p> The Second Law of Thermodynamics states that the state of entropy of the entire universe, as an isolated system, will always increase over time. The second law also states that the changes in the entropy in the universe can never be negative. </p>
+        <p> Nicolas Léonard Sadi Carnot was a French physicist, who is considered to be the "father of thermodynamics," for he is responsible for the origins of the Second Law of Thermodynamics, as well as various other concepts. The current form of the second law uses entropy rather than caloric, which is what Sadi Carnot used to describe the law. Caloric relates to heat and Sadi Carnot came to realize that some caloric is always lost in the motion cycle. Thus, the thermodynamic reversibility concept was proven wrong, proving that irreversibility is the result of every system involving work. </p>
+        <p> To understand why entropy increases and decreases, it is important to recognize that two changes in entropy have to considered at all times. The entropy change of the surroundings and the entropy change of the system itself. Given the entropy change of the universe is equivalent to the sums of the changes in entropy of the system and surroundings: </p>
+        <code> ΔSuniv=ΔSsys+ΔSsurr=qsys/T+qsurr/T </code>
+        <p>The third law of thermodynamics states that the entropy of a perfect crystal at a temperature of zero Kelvin (absolute zero) is equal to zero. </p>
+        <p>The American physical chemists Merle Randall and Gilbert Lewis stated this law differently: when the entropy of each and every element (in their perfectly crystalline states) is taken as 0 at absolute zero temperature, the entropy of every substance must have a positive, finite value. However, the entropy at absolute zero can be equal to zero, as is the case when a perfect crystal is considered. </p>
+      </article>
+  </section>
+  <section class="main-section" id="Gibbs_Free_Energy">
+    <header>Gibbs_Free_Energy</header>
+      <article>
+        <p> According to the equation, when the entropy decreases and enthalpy increases the free energy change,  ΔG , is positive and not spontaneous, and it does not matter what the temperature of the system is. Temperature comes into play when the entropy and enthalpy both increase or both decrease. The reaction is not spontaneous when both entropy and enthalpy are positive and at low temperatures, and the reaction is spontaneous when both entropy and enthalpy are positive and at high temperatures. The reactions are spontaneous when the entropy and enthalpy are negative at low temperatures, and the reaction is not spontaneous when the entropy and enthalpy are negative at high temperatures. Because all spontaneous reactions increase entropy, one can determine if the entropy changes according to the spontaneous nature of the reaction </p>
+        <code> ΔG=ΔH−TΔS </code>
+        <ul>
+          <li> ΔH  refers to the heat change for a reaction. A positive ΔH means that heat is taken from the environment (endothermic). A negative ΔH means that heat is emitted or given the environment (exothermic). </li>
+          <li> ΔG  is a measure for the change of a system's free energy in which a reaction takes place at constant pressure (P) and temperature (T). </li>
+      </article>
+  </section>
+  <section class="main-section" id="Chemical_Equilibrium">
+    <header>Chemical_Equilibrium</header>
+      <article>
+        <p> For most of the reactions that we have discussed so far, you may have assumed that once reactants are converted to products, they are likely to remain that way. In fact, however, virtually all chemical reactions are reversible to some extent. That is, an opposing reaction occurs in which the products react, to a greater or lesser degree, to re-form the reactants. Eventually, the forward and reverse reaction rates become the same, and the system reaches chemical equilibrium, the point at which the composition of the system no longer changes with time. </p>
+        <p> At equilibrium, the forward and reverse reactions of a system proceed at equal rates. Chemical equilibrium is a dynamic process consisting of forward and reverse reactions that proceed at equal rates. At equilibrium, the composition of the system no longer changes with time. The composition of an equilibrium mixture is independent of the direction from which equilibrium is approached. </p>
+      </article>
+  </section>
+  <section class="main-section" id="Electrochemistry">
+    <header>Electrochemistry</header>
+      <article>
+        <p> Electricity has been known for some time. Ancient Egyptians, for example, referred to electric fish in the Nile River as early as 2750 BC (Moller & Kramer, 1991). In 1600, William Gilbert studied what would later be seen to be electrostatic attraction, by creating static charges rubbing amber (Stewart, 2001). And Benjamin Franklin’s famous experiment (although it is actually uncertain if he performed the experiment) of attaching a metal key to a kite string occurred in 1752, and showed that lightening is an electrical phenomenon (Uman, 1987). </p>
+        <p> One of the biggest breakthroughs in the study of electricity as a chemical phenomenon was made by Alessandro Volta, who in 1799 showed that electricity could be generated by stacking copper and zinc disks submerged in sulfuric acid (Routledge, 1881). The reactions that Volta produced in his voltaic pile included both oxidation and reduction processes that could be considered as half-reactions. The half-reactions can be classified as oxidation (the loss of electrons) which happens at the anode and reduction (the gain of electrons) which occurs at the cathode. </p>
+        <p> The propensity of zinc to oxidize coupled with that of hydrogen to reduce creates a potential energy difference between the electrodes at which these processes occur. And like any potential energy difference, it can create a force which can be used to do work. In this case, the work is that of pushing electrons through a circuit. The work of such a process can be calculated by integrating </p>
+        <code> dwe=−EdQ </code>
+      </article>
+  </section>
+  <section class="main-section" id="Phase_Equilibrium">
+    <header>Phase_Equilibrium</header>
+      <article>
+        <p> From the very elementary stages of our journey to describe the physical nature of matter, we learn to classify mater into three (or more) phases: solid, liquid, and gas. This is a fairly easy classification system that can be based on such simple ideas as shape and volume. </p>
+        <p> The stability of phases can be predicted by the chemical potential, in that the most stable form of the substance will have the minimum chemical potential at the given temperature and pressure. This can be summarized in a phase diagram like the one shown below. </p>
+        <img src="https://files.mtstatic.com/site_4334/113313/0?Expires=1656349875&Signature=Xl08dB8VmnXB51BEu5Sv848TZfNY7shOuymq5PJm0p7aDodTdPdaOk7jcjwINj-qGCfVgMAcOweKZUaFSOj8kyZoWzqZ346zrLZDg2IbZFIorNXO292b8DQFNX2Zk8t8bSU2f8Vm-2wqKZ5FAkMOAljbS6jEq7e~26SoCQ4LrjM_&Key-Pair-Id=APKAJ5Y6AV4GI7A555NA" alt="phase diagram">
+        <p> In this diagram, the phase boundaries can be determined by measuring the rate of cooling at constant temperature. A typical cooling curve is shown below. The temperature will decrease over time as a sample is allowed to cool. When  κT  the substance undergoes a phase change, say from liquid to solid, the temperature will stop changing while heat is extracted due to the phase change. The temperature at which the halt occurs provides one point on the boundary at the temperature of the halt and the pressure at which the cooling curve was measured. </p>
+      </article>
+  </section>
+  <section class="main-section" id="Chemical_Kinetics">
+    <header>Chemical_Kinetics</header>
+      <article>
+        <p> Chemical kinetics is the study of how fast chemical reactions proceed from reactants to products. This is an important topic because while thermodynamics will tell us about the direction of spontaneous change, it is silent as to how fast processes will occur. But additionally, the power of studying reaction rates is that it gives us insight into the actual pathways chemical processes follow to proceed from reactants to products. </p>
+        <p> The rate of a chemical reaction (or the reaction rate) can be defined by the time needed for a change in concentration to occur. But there is a problem in that this allows for the definition to be made based on concentration changes for either the reactants or the products. Plus, due to stoichiometric concerns, the rates at which the concentrations are generally different! Toward this end, the following convention is used. </p>
+        <p> There are several methods that can be used to measure chemical reactions rates. A common method is to use spectrophotometry to monitor the concentration of a species that will absorb light. If it is possible, it is preferable to measure the appearance of a product rather than the disappearance of a reactant, due to the low background interference of the measurement. However, high-quality kinetic data can be obtained either way. </p>
+      </article>
+  </section>
+  <section class="main-section" id="Reference">
+    <header>Reference</header>
+      <article>
+        <p> Reference is at <a href="https://chem.libretexts.org/"> https://chem.libretexts.org/</a></p>
+      </article>
+  </section>
+</main>
